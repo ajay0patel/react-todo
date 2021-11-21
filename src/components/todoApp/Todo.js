@@ -26,7 +26,7 @@ const Todo = () => {
 			setItems(
 				items.map((currElem)=>{
 					if(currElem.id===isEditItem){
-						return  {... currElem , name:inputData}
+						return  {...currElem , name:inputData}
 					}
 					return currElem
 				})
@@ -40,7 +40,7 @@ const Todo = () => {
 				id : new Date().getTime().toString(),
 				name : inputData
 			}
-			setItems([ ... items,myNewInputData])
+			setItems([...items,myNewInputData])
 			setInputData("")
 		}
 	}
